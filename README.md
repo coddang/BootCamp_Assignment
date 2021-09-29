@@ -17,7 +17,7 @@
 # 📃 과제 진행 세부사항
 
 ## 🙆🏻‍♂️ 1. 배달의 민족 매인 페이지
-    [해당폴더로이동]() 
+    [해당폴더로이동](https://github.com/coddang/BootCamp_Assignment/tree/master/SSACDAY1.DELIVERY_APP_MAIN_PAGE) 
  
 <br>
 
@@ -59,7 +59,7 @@
 <br></br>
 
 ## 🦞 2. Netflix 매인 페이지 클론
-    [해당폴더로이동]() 
+    [해당폴더로이동](https://github.com/coddang/BootCamp_Assignment/tree/master/SSACDAY1.NETFLIX_MAIN_PAGE) 
 
 <br>
 
