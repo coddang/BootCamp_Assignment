@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInViewController" customModule="chanflix_login_page" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHANFLIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-gq-Uom">
+                                <rect key="frame" x="117.5" y="190" width="179" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6ao-p2-t1l">
+                                <rect key="frame" x="50" y="290" width="314" height="230"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iCi-8y-97j">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jpy-dW-wch">
+                                        <rect key="frame" x="0.0" y="49" width="314" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="passwordEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Qz6-Y9-Fhc"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Ny-jL-a9o">
+                                        <rect key="frame" x="0.0" y="98" width="314" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="XFK-ad-p8o">
+                                        <rect key="frame" x="0.0" y="147" width="314" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="28v-2G-7bB">
+                                        <rect key="frame" x="0.0" y="196" width="314" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8RV-Le-DaR">
+                                <rect key="frame" x="50" y="535" width="314" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nmj-kU-Ahp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedSignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMd-qJ-LB6"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h31-fS-BcO">
+                                <rect key="frame" x="315" y="600" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="changeStackViewClicked:" destination="BYZ-38-t0r" eventType="valueChanged" id="kKx-yD-tLF"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추가 정보 입력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwj-XW-PMB">
+                                <rect key="frame" x="50" y="605" width="80.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="8RV-Le-DaR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="KKW-Cx-Wji"/>
+                            <constraint firstItem="6ao-p2-t1l" firstAttribute="top" secondItem="XQ5-gq-Uom" secondAttribute="bottom" constant="57" id="LDO-6I-cmg"/>
+                            <constraint firstItem="XQ5-gq-Uom" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nme-tg-UNg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h31-fS-BcO" secondAttribute="trailing" constant="50" id="QY7-l0-fOT"/>
+                            <constraint firstItem="Kwj-XW-PMB" firstAttribute="top" secondItem="8RV-Le-DaR" secondAttribute="bottom" constant="20" id="Qeb-Km-iuL"/>
+                            <constraint firstItem="8RV-Le-DaR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Shr-rg-Qd2"/>
+                            <constraint firstItem="6ao-p2-t1l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="T0s-Uh-QeX"/>
+                            <constraint firstItem="8RV-Le-DaR" firstAttribute="top" secondItem="6ao-p2-t1l" secondAttribute="bottom" constant="15" id="TU4-Eq-xx7"/>
+                            <constraint firstItem="h31-fS-BcO" firstAttribute="top" secondItem="8RV-Le-DaR" secondAttribute="bottom" constant="15" id="jeA-5k-hg5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ao-p2-t1l" secondAttribute="trailing" constant="50" id="mLb-jb-KVq"/>
+                            <constraint firstItem="Kwj-XW-PMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nvZ-PZ-J4k"/>
+                            <constraint firstItem="XQ5-gq-Uom" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="146" id="rps-6X-UtT"/>
+                            <constraint firstItem="h31-fS-BcO" firstAttribute="leading" secondItem="Kwj-XW-PMB" secondAttribute="trailing" constant="184.5" id="wsU-x8-jEj"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fqO-p3-35X" appends="YES" id="MRR-Pb-EWk"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="changeStackViewSwitch" destination="h31-fS-BcO" id="SGv-XU-bw1"/>
+                        <outlet property="emailOrPhoneNumberTextField" destination="iCi-8y-97j" id="4X6-HX-Zas"/>
+                        <outlet property="locationTextField" destination="XFK-ad-p8o" id="vSc-Vn-Vgz"/>
+                        <outlet property="nicknameTextField" destination="2Ny-jL-a9o" id="1iP-Mm-hkg"/>
+                        <outlet property="passwordTextField" destination="Jpy-dW-wch" id="L4s-0C-fe5"/>
+                        <outlet property="recommendationCodeTextField" destination="28v-2G-7bB" id="QHq-44-C4y"/>
+                        <outlet property="signInButton" destination="8RV-Le-DaR" id="DVv-Hr-NN0"/>
+                        <outlet property="titleLabel" destination="XQ5-gq-Uom" id="hzy-wh-Atb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fqO-p3-35X">
+                    <connections>
+                        <action selector="tappedBG:" destination="BYZ-38-t0r" id="lGF-mJ-MWE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

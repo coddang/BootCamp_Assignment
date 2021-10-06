@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		247DA0A52703545400742E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DA0A42703545400742E4F /* AppDelegate.swift */; };
-		247DA0A72703545400742E4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DA0A62703545400742E4F /* SceneDelegate.swift */; };
-		247DA0AC2703545400742E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AA2703545400742E4F /* Main.storyboard */; };
-		247DA0AE2703545600742E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AD2703545600742E4F /* Assets.xcassets */; };
-		247DA0B12703545600742E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AF2703545600742E4F /* LaunchScreen.storyboard */; };
-		24ECF3B327035E8100981A77 /* DetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */; };
-		24ECF3B5270362A800981A77 /* DeleveryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */; };
-		24ECF3B72703643E00981A77 /* DeleveryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B62703643E00981A77 /* DeleveryInfo.swift */; };
-		24ECF3BD2703895B00981A77 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */; };
+		24AB1BC0270D90D40034BC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB1BBF270D90D40034BC27 /* AppDelegate.swift */; };
+		24AB1BC2270D90D40034BC27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB1BC1270D90D40034BC27 /* SceneDelegate.swift */; };
+		24AB1BC7270D90D40034BC27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AB1BC5270D90D40034BC27 /* Main.storyboard */; };
+		24AB1BC9270D90D50034BC27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AB1BC8270D90D50034BC27 /* Assets.xcassets */; };
+		24AB1BCC270D90D50034BC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AB1BCA270D90D50034BC27 /* LaunchScreen.storyboard */; };
+		24AB1BD4270D934A0034BC27 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AB1BD3270D934A0034BC27 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		247DA0A12703545400742E4F /* DeleveryApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleveryApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		247DA0A42703545400742E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		247DA0A62703545400742E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		247DA0AB2703545400742E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		247DA0AD2703545600742E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		247DA0B02703545600742E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		247DA0B22703545600742E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderViewController.swift; sourceTree = "<group>"; };
-		24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleveryMainViewController.swift; sourceTree = "<group>"; };
-		24ECF3B62703643E00981A77 /* DeleveryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleveryInfo.swift; sourceTree = "<group>"; };
-		24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		24AB1BBC270D90D40034BC27 /* chanflix_login_page.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chanflix_login_page.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24AB1BBF270D90D40034BC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24AB1BC1270D90D40034BC27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24AB1BC6270D90D40034BC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24AB1BC8270D90D50034BC27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24AB1BCB270D90D50034BC27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24AB1BCD270D90D50034BC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AB1BD3270D934A0034BC27 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		247DA09E2703545400742E4F /* Frameworks */ = {
+		24AB1BB9270D90D40034BC27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		247DA0982703545400742E4F = {
+		24AB1BB3270D90D40034BC27 = {
 			isa = PBXGroup;
 			children = (
-				247DA0A32703545400742E4F /* DeleveryApplication */,
-				247DA0A22703545400742E4F /* Products */,
+				24AB1BBE270D90D40034BC27 /* chanflix_login_page */,
+				24AB1BBD270D90D40034BC27 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		247DA0A22703545400742E4F /* Products */ = {
+		24AB1BBD270D90D40034BC27 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				247DA0A12703545400742E4F /* DeleveryApplication.app */,
+				24AB1BBC270D90D40034BC27 /* chanflix_login_page.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		247DA0A32703545400742E4F /* DeleveryApplication */ = {
+		24AB1BBE270D90D40034BC27 /* chanflix_login_page */ = {
 			isa = PBXGroup;
 			children = (
-				247DA0A42703545400742E4F /* AppDelegate.swift */,
-				247DA0A62703545400742E4F /* SceneDelegate.swift */,
-				24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */,
-				24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */,
-				24ECF3B62703643E00981A77 /* DeleveryInfo.swift */,
-				24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */,
-				247DA0AA2703545400742E4F /* Main.storyboard */,
-				247DA0AD2703545600742E4F /* Assets.xcassets */,
-				247DA0AF2703545600742E4F /* LaunchScreen.storyboard */,
-				247DA0B22703545600742E4F /* Info.plist */,
+				24AB1BBF270D90D40034BC27 /* AppDelegate.swift */,
+				24AB1BC1270D90D40034BC27 /* SceneDelegate.swift */,
+				24AB1BC5270D90D40034BC27 /* Main.storyboard */,
+				24AB1BD3270D934A0034BC27 /* SignInViewController.swift */,
+				24AB1BC8270D90D50034BC27 /* Assets.xcassets */,
+				24AB1BCA270D90D50034BC27 /* LaunchScreen.storyboard */,
+				24AB1BCD270D90D50034BC27 /* Info.plist */,
 			);
-			path = DeleveryApplication;
+			path = chanflix_login_page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		247DA0A02703545400742E4F /* DeleveryApplication */ = {
+		24AB1BBB270D90D40034BC27 /* chanflix_login_page */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 247DA0B52703545600742E4F /* Build configuration list for PBXNativeTarget "DeleveryApplication" */;
+			buildConfigurationList = 24AB1BD0270D90D50034BC27 /* Build configuration list for PBXNativeTarget "chanflix_login_page" */;
 			buildPhases = (
-				247DA09D2703545400742E4F /* Sources */,
-				247DA09E2703545400742E4F /* Frameworks */,
-				247DA09F2703545400742E4F /* Resources */,
+				24AB1BB8270D90D40034BC27 /* Sources */,
+				24AB1BB9270D90D40034BC27 /* Frameworks */,
+				24AB1BBA270D90D40034BC27 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DeleveryApplication;
-			productName = DeleveryApplication;
-			productReference = 247DA0A12703545400742E4F /* DeleveryApplication.app */;
+			name = chanflix_login_page;
+			productName = chanflix_login_page;
+			productReference = 24AB1BBC270D90D40034BC27 /* chanflix_login_page.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		247DA0992703545400742E4F /* Project object */ = {
+		24AB1BB4270D90D40034BC27 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					247DA0A02703545400742E4F = {
+					24AB1BBB270D90D40034BC27 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 247DA09C2703545400742E4F /* Build configuration list for PBXProject "DeleveryApplication" */;
+			buildConfigurationList = 24AB1BB7270D90D40034BC27 /* Build configuration list for PBXProject "chanflix_login_page" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 247DA0982703545400742E4F;
-			productRefGroup = 247DA0A22703545400742E4F /* Products */;
+			mainGroup = 24AB1BB3270D90D40034BC27;
+			productRefGroup = 24AB1BBD270D90D40034BC27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				247DA0A02703545400742E4F /* DeleveryApplication */,
+				24AB1BBB270D90D40034BC27 /* chanflix_login_page */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		247DA09F2703545400742E4F /* Resources */ = {
+		24AB1BBA270D90D40034BC27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247DA0B12703545600742E4F /* LaunchScreen.storyboard in Resources */,
-				247DA0AE2703545600742E4F /* Assets.xcassets in Resources */,
-				247DA0AC2703545400742E4F /* Main.storyboard in Resources */,
+				24AB1BCC270D90D50034BC27 /* LaunchScreen.storyboard in Resources */,
+				24AB1BC9270D90D50034BC27 /* Assets.xcassets in Resources */,
+				24AB1BC7270D90D40034BC27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		247DA09D2703545400742E4F /* Sources */ = {
+		24AB1BB8270D90D40034BC27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247DA0A52703545400742E4F /* AppDelegate.swift in Sources */,
-				24ECF3B72703643E00981A77 /* DeleveryInfo.swift in Sources */,
-				24ECF3BD2703895B00981A77 /* BannerCollectionViewCell.swift in Sources */,
-				247DA0A72703545400742E4F /* SceneDelegate.swift in Sources */,
-				24ECF3B5270362A800981A77 /* DeleveryMainViewController.swift in Sources */,
-				24ECF3B327035E8100981A77 /* DetailOrderViewController.swift in Sources */,
+				24AB1BC0270D90D40034BC27 /* AppDelegate.swift in Sources */,
+				24AB1BC2270D90D40034BC27 /* SceneDelegate.swift in Sources */,
+				24AB1BD4270D934A0034BC27 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		247DA0AA2703545400742E4F /* Main.storyboard */ = {
+		24AB1BC5270D90D40034BC27 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				247DA0AB2703545400742E4F /* Base */,
+				24AB1BC6270D90D40034BC27 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		247DA0AF2703545600742E4F /* LaunchScreen.storyboard */ = {
+		24AB1BCA270D90D50034BC27 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				247DA0B02703545600742E4F /* Base */,
+				24AB1BCB270D90D50034BC27 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		247DA0B32703545600742E4F /* Debug */ = {
+		24AB1BCE270D90D50034BC27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		247DA0B42703545600742E4F /* Release */ = {
+		24AB1BCF270D90D50034BC27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,7 +282,7 @@
 			};
 			name = Release;
 		};
-		247DA0B62703545600742E4F /* Debug */ = {
+		24AB1BD1270D90D50034BC27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeleveryApplication/Info.plist;
+				INFOPLIST_FILE = chanflix_login_page/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,15 +302,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haechanyang.DeleveryApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haechanyang.chanflix-login-page";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		247DA0B72703545600742E4F /* Release */ = {
+		24AB1BD2270D90D50034BC27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeleveryApplication/Info.plist;
+				INFOPLIST_FILE = chanflix_login_page/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,36 +330,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.haechanyang.DeleveryApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haechanyang.chanflix-login-page";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		247DA09C2703545400742E4F /* Build configuration list for PBXProject "DeleveryApplication" */ = {
+		24AB1BB7270D90D40034BC27 /* Build configuration list for PBXProject "chanflix_login_page" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				247DA0B32703545600742E4F /* Debug */,
-				247DA0B42703545600742E4F /* Release */,
+				24AB1BCE270D90D50034BC27 /* Debug */,
+				24AB1BCF270D90D50034BC27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		247DA0B52703545600742E4F /* Build configuration list for PBXNativeTarget "DeleveryApplication" */ = {
+		24AB1BD0270D90D50034BC27 /* Build configuration list for PBXNativeTarget "chanflix_login_page" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				247DA0B62703545600742E4F /* Debug */,
-				247DA0B72703545600742E4F /* Release */,
+				24AB1BD1270D90D50034BC27 /* Debug */,
+				24AB1BD2270D90D50034BC27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 247DA0992703545400742E4F /* Project object */;
+	rootObject = 24AB1BB4270D90D40034BC27 /* Project object */;
 }
