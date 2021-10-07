@@ -30,7 +30,6 @@ class MainDiaryViewController: UIViewController {
         let count = UserDefaults.standard.integer(forKey: "emotion \(sender.tag)")
         UserDefaults.standard.set(count + 1, forKey: "emotion \(sender.tag)")
         updateEmotionUI()
-        
     }
     
     func updateEmotionUI() {
