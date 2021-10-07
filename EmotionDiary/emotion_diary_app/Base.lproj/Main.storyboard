@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Diary View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainDiaryViewController" customModule="emotion_diary_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vxs-bJ-7cu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="감정 다이어리" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-i0-CWv">
+                                <rect key="frame" x="158" y="74" width="98" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lvf-uj-QfI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPt-To-XMV">
+                                <rect key="frame" x="20" y="71" width="45" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Li3-VD-DQW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="list.bullet" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-WI-2MP">
+                                <rect key="frame" x="50" y="722" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="V5T-os-Pks"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="전체 초기화">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedRemoveCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNN-yB-Vzw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-ok-gSG">
+                                <rect key="frame" x="62" y="246" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime1"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDy-3J-AOE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="행복해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-ZT-slg">
+                                <rect key="frame" x="62" y="326" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-Hd-Hds">
+                                <rect key="frame" x="272" y="246" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime3"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPa-dD-RDx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="좋아해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zf-WP-8de">
+                                <rect key="frame" x="272" y="326" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e5-LS-QQh">
+                                <rect key="frame" x="167" y="246" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime2"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBX-r7-QMk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="사랑해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-Uh-5qM">
+                                <rect key="frame" x="167" y="326" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-ln-qJp">
+                                <rect key="frame" x="62" y="355" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime4"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCR-iL-jbv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="화가나 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Z-Dl-OYD">
+                                <rect key="frame" x="62" y="435" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-Ac-gwa">
+                                <rect key="frame" x="272" y="355" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime6"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgn-MQ-OYS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="심심해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-sp-pcP">
+                                <rect key="frame" x="272" y="435" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-Xy-92v">
+                                <rect key="frame" x="167" y="355" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime5"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUp-Vt-yVK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="당황해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-uF-E0m">
+                                <rect key="frame" x="167" y="435" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-EX-Ye4">
+                                <rect key="frame" x="62" y="464" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime7"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sB-wf-Npa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="황당해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-or-KUV">
+                                <rect key="frame" x="62" y="544" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFp-DH-u4g">
+                                <rect key="frame" x="272" y="464" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime9"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INu-Yj-EH0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="슬퍼해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AN-UK-RKc">
+                                <rect key="frame" x="272" y="544" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guW-s3-RZJ">
+                                <rect key="frame" x="167" y="464" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="mono_slime8"/>
+                                <connections>
+                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqC-lk-jtL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="우울해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-cg-g53">
+                                <rect key="frame" x="167" y="544" width="80" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MPt-To-XMV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ibd-Lx-zXg"/>
+                            <constraint firstItem="Vxs-bJ-7cu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SHb-Zc-65j"/>
+                            <constraint firstItem="Vxs-bJ-7cu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VOf-jM-1k0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xK2-WI-2MP" secondAttribute="trailing" constant="50" id="Vuh-i3-CkC"/>
+                            <constraint firstItem="xK2-WI-2MP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="X2D-wp-65L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xK2-WI-2MP" secondAttribute="bottom" constant="100" id="aHS-Qs-1nQ"/>
+                            <constraint firstItem="Vxs-bJ-7cu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aW2-94-5a7"/>
+                            <constraint firstAttribute="bottom" secondItem="Vxs-bJ-7cu" secondAttribute="bottom" id="cSV-z3-rEU"/>
+                            <constraint firstItem="1nb-i0-CWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j56-7g-80K"/>
+                            <constraint firstItem="1nb-i0-CWv" firstAttribute="leading" secondItem="MPt-To-XMV" secondAttribute="trailing" constant="93" id="lD8-0e-6vE"/>
+                            <constraint firstItem="MPt-To-XMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="oRJ-E6-PRt"/>
+                            <constraint firstItem="1nb-i0-CWv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tFn-PP-vfb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="angerLabel" destination="h5Z-Dl-OYD" id="ExG-t9-K94"/>
+                        <outlet property="blueLabel" destination="aOT-cg-g53" id="ajH-p0-w9T"/>
+                        <outlet property="boreLabel" destination="4cC-sp-pcP" id="VHZ-Lo-QPk"/>
+                        <outlet property="happyLabel" destination="OYB-ZT-slg" id="5K7-rT-pDy"/>
+                        <outlet property="likeLabel" destination="8Zf-WP-8de" id="KAN-Sv-fPs"/>
+                        <outlet property="loveLabel" destination="60l-Uh-5qM" id="iVE-rB-1gr"/>
+                        <outlet property="panicLabel" destination="d9V-or-KUV" id="WE1-O6-sbP"/>
+                        <outlet property="resetButton" destination="xK2-WI-2MP" id="h2Q-HD-nZj"/>
+                        <outlet property="sadLabel" destination="5AN-UK-RKc" id="ecE-V4-znU"/>
+                        <outlet property="shockedLabel" destination="rZe-uF-E0m" id="MVg-ZB-2lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackgroundImage" id="QFJ-S9-cfQ">
+                    <rect key="frame" x="0.0" y="0.0" width="235" height="399"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="-28.985507246376812" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainBackgroundImage" width="657.5" height="960"/>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="mono_slime1" width="278" height="258"/>
+        <image name="mono_slime2" width="278" height="258"/>
+        <image name="mono_slime3" width="278" height="258"/>
+        <image name="mono_slime4" width="278" height="258"/>
+        <image name="mono_slime5" width="278" height="258"/>
+        <image name="mono_slime6" width="278" height="258"/>
+        <image name="mono_slime7" width="278" height="258"/>
+        <image name="mono_slime8" width="278" height="258"/>
+        <image name="mono_slime9" width="278" height="258"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

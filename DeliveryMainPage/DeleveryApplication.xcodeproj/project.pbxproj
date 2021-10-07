@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24C26B43270DBC8F00889411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C26B42270DBC8F00889411 /* AppDelegate.swift */; };
-		24C26B45270DBC8F00889411 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C26B44270DBC8F00889411 /* SceneDelegate.swift */; };
-		24C26B47270DBC8F00889411 /* MainDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C26B46270DBC8F00889411 /* MainDiaryViewController.swift */; };
-		24C26B4A270DBC8F00889411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C26B48270DBC8F00889411 /* Main.storyboard */; };
-		24C26B4C270DBC9000889411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C26B4B270DBC9000889411 /* Assets.xcassets */; };
-		24C26B4F270DBC9000889411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C26B4D270DBC9000889411 /* LaunchScreen.storyboard */; };
+		247DA0A52703545400742E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DA0A42703545400742E4F /* AppDelegate.swift */; };
+		247DA0A72703545400742E4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247DA0A62703545400742E4F /* SceneDelegate.swift */; };
+		247DA0AC2703545400742E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AA2703545400742E4F /* Main.storyboard */; };
+		247DA0AE2703545600742E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AD2703545600742E4F /* Assets.xcassets */; };
+		247DA0B12703545600742E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247DA0AF2703545600742E4F /* LaunchScreen.storyboard */; };
+		24ECF3B327035E8100981A77 /* DetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */; };
+		24ECF3B5270362A800981A77 /* DeleveryMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */; };
+		24ECF3B72703643E00981A77 /* DeleveryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3B62703643E00981A77 /* DeleveryInfo.swift */; };
+		24ECF3BD2703895B00981A77 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24C26B3F270DBC8F00889411 /* emotion_diary_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emotion_diary_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24C26B42270DBC8F00889411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		24C26B44270DBC8F00889411 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24C26B46270DBC8F00889411 /* MainDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDiaryViewController.swift; sourceTree = "<group>"; };
-		24C26B49270DBC8F00889411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		24C26B4B270DBC9000889411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		24C26B4E270DBC9000889411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		24C26B50270DBC9000889411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		247DA0A12703545400742E4F /* DeleveryApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeleveryApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		247DA0A42703545400742E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		247DA0A62703545400742E4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		247DA0AB2703545400742E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		247DA0AD2703545600742E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		247DA0B02703545600742E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		247DA0B22703545600742E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderViewController.swift; sourceTree = "<group>"; };
+		24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleveryMainViewController.swift; sourceTree = "<group>"; };
+		24ECF3B62703643E00981A77 /* DeleveryInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleveryInfo.swift; sourceTree = "<group>"; };
+		24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		24C26B3C270DBC8F00889411 /* Frameworks */ = {
+		247DA09E2703545400742E4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +43,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24C26B36270DBC8F00889411 = {
+		247DA0982703545400742E4F = {
 			isa = PBXGroup;
 			children = (
-				24C26B41270DBC8F00889411 /* emotion_diary_app */,
-				24C26B40270DBC8F00889411 /* Products */,
+				247DA0A32703545400742E4F /* DeleveryApplication */,
+				247DA0A22703545400742E4F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		24C26B40270DBC8F00889411 /* Products */ = {
+		247DA0A22703545400742E4F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24C26B3F270DBC8F00889411 /* emotion_diary_app.app */,
+				247DA0A12703545400742E4F /* DeleveryApplication.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24C26B41270DBC8F00889411 /* emotion_diary_app */ = {
+		247DA0A32703545400742E4F /* DeleveryApplication */ = {
 			isa = PBXGroup;
 			children = (
-				24C26B42270DBC8F00889411 /* AppDelegate.swift */,
-				24C26B44270DBC8F00889411 /* SceneDelegate.swift */,
-				24C26B46270DBC8F00889411 /* MainDiaryViewController.swift */,
-				24C26B48270DBC8F00889411 /* Main.storyboard */,
-				24C26B4B270DBC9000889411 /* Assets.xcassets */,
-				24C26B4D270DBC9000889411 /* LaunchScreen.storyboard */,
-				24C26B50270DBC9000889411 /* Info.plist */,
+				247DA0A42703545400742E4F /* AppDelegate.swift */,
+				247DA0A62703545400742E4F /* SceneDelegate.swift */,
+				24ECF3B4270362A800981A77 /* DeleveryMainViewController.swift */,
+				24ECF3BC2703895B00981A77 /* BannerCollectionViewCell.swift */,
+				24ECF3B62703643E00981A77 /* DeleveryInfo.swift */,
+				24ECF3B227035E8100981A77 /* DetailOrderViewController.swift */,
+				247DA0AA2703545400742E4F /* Main.storyboard */,
+				247DA0AD2703545600742E4F /* Assets.xcassets */,
+				247DA0AF2703545600742E4F /* LaunchScreen.storyboard */,
+				247DA0B22703545600742E4F /* Info.plist */,
 			);
-			path = emotion_diary_app;
+			path = DeleveryApplication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24C26B3E270DBC8F00889411 /* emotion_diary_app */ = {
+		247DA0A02703545400742E4F /* DeleveryApplication */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24C26B53270DBC9000889411 /* Build configuration list for PBXNativeTarget "emotion_diary_app" */;
+			buildConfigurationList = 247DA0B52703545600742E4F /* Build configuration list for PBXNativeTarget "DeleveryApplication" */;
 			buildPhases = (
-				24C26B3B270DBC8F00889411 /* Sources */,
-				24C26B3C270DBC8F00889411 /* Frameworks */,
-				24C26B3D270DBC8F00889411 /* Resources */,
+				247DA09D2703545400742E4F /* Sources */,
+				247DA09E2703545400742E4F /* Frameworks */,
+				247DA09F2703545400742E4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = emotion_diary_app;
-			productName = emotion_diary_app;
-			productReference = 24C26B3F270DBC8F00889411 /* emotion_diary_app.app */;
+			name = DeleveryApplication;
+			productName = DeleveryApplication;
+			productReference = 247DA0A12703545400742E4F /* DeleveryApplication.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		24C26B37270DBC8F00889411 /* Project object */ = {
+		247DA0992703545400742E4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					24C26B3E270DBC8F00889411 = {
+					247DA0A02703545400742E4F = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 24C26B3A270DBC8F00889411 /* Build configuration list for PBXProject "emotion_diary_app" */;
+			buildConfigurationList = 247DA09C2703545400742E4F /* Build configuration list for PBXProject "DeleveryApplication" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +119,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 24C26B36270DBC8F00889411;
-			productRefGroup = 24C26B40270DBC8F00889411 /* Products */;
+			mainGroup = 247DA0982703545400742E4F;
+			productRefGroup = 247DA0A22703545400742E4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24C26B3E270DBC8F00889411 /* emotion_diary_app */,
+				247DA0A02703545400742E4F /* DeleveryApplication */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		24C26B3D270DBC8F00889411 /* Resources */ = {
+		247DA09F2703545400742E4F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C26B4F270DBC9000889411 /* LaunchScreen.storyboard in Resources */,
-				24C26B4C270DBC9000889411 /* Assets.xcassets in Resources */,
-				24C26B4A270DBC8F00889411 /* Main.storyboard in Resources */,
+				247DA0B12703545600742E4F /* LaunchScreen.storyboard in Resources */,
+				247DA0AE2703545600742E4F /* Assets.xcassets in Resources */,
+				247DA0AC2703545400742E4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24C26B3B270DBC8F00889411 /* Sources */ = {
+		247DA09D2703545400742E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C26B47270DBC8F00889411 /* MainDiaryViewController.swift in Sources */,
-				24C26B43270DBC8F00889411 /* AppDelegate.swift in Sources */,
-				24C26B45270DBC8F00889411 /* SceneDelegate.swift in Sources */,
+				247DA0A52703545400742E4F /* AppDelegate.swift in Sources */,
+				24ECF3B72703643E00981A77 /* DeleveryInfo.swift in Sources */,
+				24ECF3BD2703895B00981A77 /* BannerCollectionViewCell.swift in Sources */,
+				247DA0A72703545400742E4F /* SceneDelegate.swift in Sources */,
+				24ECF3B5270362A800981A77 /* DeleveryMainViewController.swift in Sources */,
+				24ECF3B327035E8100981A77 /* DetailOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24C26B48270DBC8F00889411 /* Main.storyboard */ = {
+		247DA0AA2703545400742E4F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				24C26B49270DBC8F00889411 /* Base */,
+				247DA0AB2703545400742E4F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		24C26B4D270DBC9000889411 /* LaunchScreen.storyboard */ = {
+		247DA0AF2703545600742E4F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				24C26B4E270DBC9000889411 /* Base */,
+				247DA0B02703545600742E4F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		24C26B51270DBC9000889411 /* Debug */ = {
+		247DA0B32703545600742E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		24C26B52270DBC9000889411 /* Release */ = {
+		247DA0B42703545600742E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +294,7 @@
 			};
 			name = Release;
 		};
-		24C26B54270DBC9000889411 /* Debug */ = {
+		247DA0B62703545600742E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +303,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = emotion_diary_app/Info.plist;
+				INFOPLIST_FILE = DeleveryApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,15 +314,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haechanyang.emotion-diary-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haechanyang.DeleveryApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		24C26B55270DBC9000889411 /* Release */ = {
+		247DA0B72703545600742E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,7 +331,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = emotion_diary_app/Info.plist;
+				INFOPLIST_FILE = DeleveryApplication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,36 +342,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haechanyang.emotion-diary-app";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haechanyang.DeleveryApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24C26B3A270DBC8F00889411 /* Build configuration list for PBXProject "emotion_diary_app" */ = {
+		247DA09C2703545400742E4F /* Build configuration list for PBXProject "DeleveryApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24C26B51270DBC9000889411 /* Debug */,
-				24C26B52270DBC9000889411 /* Release */,
+				247DA0B32703545600742E4F /* Debug */,
+				247DA0B42703545600742E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24C26B53270DBC9000889411 /* Build configuration list for PBXNativeTarget "emotion_diary_app" */ = {
+		247DA0B52703545600742E4F /* Build configuration list for PBXNativeTarget "DeleveryApplication" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24C26B54270DBC9000889411 /* Debug */,
-				24C26B55270DBC9000889411 /* Release */,
+				247DA0B62703545600742E4F /* Debug */,
+				247DA0B72703545600742E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 24C26B37270DBC8F00889411 /* Project object */;
+	rootObject = 247DA0992703545400742E4F /* Project object */;
 }
