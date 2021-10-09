@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "MainBackgroundImage.jpg",
+      "filename" : "papertexture-g64dce1c4e_1280.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "MainBackgroundImage-1.jpg",
+      "filename" : "papertexture-g64dce1c4e_1280-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "MainBackgroundImage-2.jpg",
+      "filename" : "papertexture-g64dce1c4e_1280-2.jpg",
       "idiom" : "universal",
       "scale" : "3x"
     }

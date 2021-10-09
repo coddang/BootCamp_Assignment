@@ -17,19 +17,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Vxs-bJ-7cu">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="415" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="감정 다이어리" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-i0-CWv">
-                                <rect key="frame" x="158" y="74" width="98" height="40"/>
+                                <rect key="frame" x="164" y="74" width="87" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Lvf-uj-QfI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPt-To-XMV">
-                                <rect key="frame" x="20" y="71" width="45" height="44"/>
+                                <rect key="frame" x="20" y="71" width="51" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Li3-VD-DQW"/>
                                 </constraints>
@@ -39,278 +39,305 @@
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-WI-2MP">
-                                <rect key="frame" x="50" y="722" width="314" height="40"/>
+                                <rect key="frame" x="50" y="772" width="315" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="V5T-os-Pks"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="전체 초기화">
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="전체 초기화">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="tappedRemoveCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNN-yB-Vzw"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="7CU-to-fLA">
-                                <rect key="frame" x="60" y="387" width="294" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3j1-nj-5UC">
+                                <rect key="frame" x="72" y="312.5" width="271" height="271"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yqI-Cl-dtX">
-                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a2z-FL-BjX">
+                                        <rect key="frame" x="0.0" y="0.0" width="271" height="85"/>
                                         <subviews>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-ln-qJp">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime4"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCR-iL-jbv"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화가나 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Z-Dl-OYD">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fjV-0D-yUR">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En1-GD-XFr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime1"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sc9-BN-jgU"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fjn-Kp-m0v">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="qKj-Ky-50A"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="bVz-qq-f1d"/>
+                                                    <constraint firstAttribute="width" secondItem="fjV-0D-yUR" secondAttribute="height" multiplier="1:1" id="Lvs-tj-8st"/>
+                                                    <constraint firstAttribute="height" constant="85" id="hyP-sg-RbW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cj7-kt-Ib4">
+                                                <rect key="frame" x="93" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-mp-fIm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime2"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="erx-xp-32O"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6P-ZK-eBF">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="44E-hD-9Am"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="3Zo-gi-RIa"/>
+                                                    <constraint firstAttribute="width" secondItem="Cj7-kt-Ib4" secondAttribute="height" multiplier="1:1" id="Ds8-63-KOH"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="GTM-Dg-TWd">
+                                                <rect key="frame" x="186" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sX1-bT-Yl2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="69"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime3"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OCe-UT-hkN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgy-1N-vd8">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="r7p-xw-aNE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GTM-Dg-TWd" secondAttribute="height" multiplier="1:1" id="3Lv-yc-ZJ5"/>
+                                                    <constraint firstAttribute="height" constant="85" id="tp3-BT-2Gg"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ALo-fc-zlC">
-                                        <rect key="frame" x="102.5" y="0.0" width="89" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TCI-CG-WZB">
+                                        <rect key="frame" x="0.0" y="93" width="271" height="85"/>
                                         <subviews>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPd-Xy-92v">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime5"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUp-Vt-yVK"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZe-uF-E0m">
-                                                <rect key="frame" x="0.0" y="80" width="89" height="20"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BOk-AK-Jcu">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItW-fv-zce">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime4"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXA-cq-5zX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="화가나 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-3q-0Vs">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="APt-rS-1CY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="Nuy-M2-UUi"/>
+                                                    <constraint firstAttribute="width" secondItem="BOk-AK-Jcu" secondAttribute="height" multiplier="1:1" id="Cst-F0-rUN"/>
+                                                    <constraint firstAttribute="height" constant="85" id="axk-E3-jhp"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jYF-tv-fsK">
+                                                <rect key="frame" x="93" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEg-r1-h7H">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime5"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGG-5f-cyJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-ja-ebC">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="80f-Qo-I5h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jYF-tv-fsK" secondAttribute="height" multiplier="1:1" id="SlE-Qt-wEi"/>
+                                                    <constraint firstAttribute="height" constant="85" id="u3H-pT-UGp"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TAf-fV-PbI">
+                                                <rect key="frame" x="186" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4op-iw-hD1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="69"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime6"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dIZ-Me-3HG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLS-vr-rNJ">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="Xah-Dq-Lt2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="QZm-QG-ZAV"/>
+                                                    <constraint firstAttribute="width" secondItem="TAf-fV-PbI" secondAttribute="height" multiplier="1:1" id="WfS-UH-pTj"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="peh-K0-YsI">
-                                        <rect key="frame" x="205.5" y="0.0" width="88.5" height="100"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Ag-ud-vw6">
+                                        <rect key="frame" x="0.0" y="186" width="271" height="85"/>
                                         <subviews>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnV-Ac-gwa">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime6"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgn-MQ-OYS"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-sp-pcP">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S1L-NA-9xL">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUR-2E-Yvs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime7"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="laj-T1-Gop"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="황당해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qE-Dq-dtG">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="Bem-4Y-re1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="K6H-f0-qZJ"/>
+                                                    <constraint firstAttribute="width" secondItem="S1L-NA-9xL" secondAttribute="height" multiplier="1:1" id="f9f-pe-Hu1"/>
+                                                    <constraint firstAttribute="height" constant="85" id="u9z-NW-ojf"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-I6-gX5">
+                                                <rect key="frame" x="93" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ww3-u4-hmB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime8"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YoI-bc-NtX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-9G-0v4">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="pVN-3W-wu8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="PkP-xa-qHX"/>
+                                                    <constraint firstAttribute="width" secondItem="wLc-I6-gX5" secondAttribute="height" multiplier="1:1" id="xL8-UU-O1t"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="qaS-F5-blc">
+                                                <rect key="frame" x="186" y="0.0" width="85" height="85"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN1-5p-gyw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="85" height="69"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" image="mono_slime9"/>
+                                                        <connections>
+                                                            <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aLf-nO-P02"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬퍼해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keO-ZR-kcr">
+                                                        <rect key="frame" x="0.0" y="70" width="85" height="15"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="9mh-Re-cBC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="85" id="Jit-lx-FaN"/>
+                                                    <constraint firstAttribute="width" secondItem="qaS-F5-blc" secondAttribute="height" multiplier="1:1" id="WAC-DC-sYs"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="QSV-je-Uz3"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Hdc-2z-OWO">
-                                <rect key="frame" x="60" y="501" width="294" height="100"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hwe-Tm-d1h">
-                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-EX-Ye4">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime7"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sB-wf-Npa"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="황당해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-or-KUV">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="Qr2-CO-hKl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zK4-7c-9CG">
-                                        <rect key="frame" x="102.5" y="0.0" width="89" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guW-s3-RZJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime8"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RqC-lk-jtL"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-cg-g53">
-                                                <rect key="frame" x="0.0" y="80" width="89" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="DqY-vu-Itu"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6Cl-ON-OOU">
-                                        <rect key="frame" x="205.5" y="0.0" width="88.5" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFp-DH-u4g">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime9"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="INu-Yj-EH0"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬퍼해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AN-UK-RKc">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="xLk-lK-RXz"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="W60-89-prK"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-KW-qJz">
-                                <rect key="frame" x="60" y="273" width="294" height="100"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ze0-Lo-fT1">
-                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIt-ok-gSG">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime1"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDy-3J-AOE"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-ZT-slg">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="cOK-ve-RoX"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MJM-zq-HKQ">
-                                        <rect key="frame" x="102.5" y="0.0" width="89" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e5-LS-QQh">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime2"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SBX-r7-QMk"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-Uh-5qM">
-                                                <rect key="frame" x="0.0" y="80" width="89" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="2sW-i3-jzy"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="q9W-GQ-Uvb">
-                                        <rect key="frame" x="205.5" y="0.0" width="88.5" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q50-Hd-Hds">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="80"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" image="mono_slime3"/>
-                                                <connections>
-                                                    <action selector="tappedCountingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPa-dD-RDx"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zf-WP-8de">
-                                                <rect key="frame" x="0.0" y="80" width="88.5" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="7jd-tB-1XU"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="H0h-HF-ywm"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Hdc-2z-OWO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="BWt-Nq-q22"/>
-                            <constraint firstAttribute="trailing" secondItem="Hdc-2z-OWO" secondAttribute="trailing" constant="60" id="CmU-uX-EoE"/>
                             <constraint firstItem="MPt-To-XMV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ibd-Lx-zXg"/>
-                            <constraint firstAttribute="trailing" secondItem="ZfM-KW-qJz" secondAttribute="trailing" constant="60" id="NWq-EC-Sly"/>
-                            <constraint firstItem="7CU-to-fLA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="R3f-D6-hQL"/>
+                            <constraint firstItem="3j1-nj-5UC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="NDD-O0-jIo"/>
+                            <constraint firstItem="3j1-nj-5UC" firstAttribute="centerY" secondItem="Vxs-bJ-7cu" secondAttribute="centerY" id="OqO-tk-rhZ"/>
                             <constraint firstItem="Vxs-bJ-7cu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SHb-Zc-65j"/>
-                            <constraint firstItem="7CU-to-fLA" firstAttribute="top" secondItem="ZfM-KW-qJz" secondAttribute="bottom" constant="14" id="Se4-MO-Iki"/>
                             <constraint firstItem="Vxs-bJ-7cu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VOf-jM-1k0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xK2-WI-2MP" secondAttribute="trailing" constant="50" id="Vuh-i3-CkC"/>
-                            <constraint firstItem="Hdc-2z-OWO" firstAttribute="top" secondItem="7CU-to-fLA" secondAttribute="bottom" constant="14" id="W2a-Tl-Kn3"/>
-                            <constraint firstItem="ZfM-KW-qJz" firstAttribute="top" secondItem="1nb-i0-CWv" secondAttribute="bottom" constant="159" id="WLA-xv-ceS"/>
                             <constraint firstItem="xK2-WI-2MP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="X2D-wp-65L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xK2-WI-2MP" secondAttribute="bottom" constant="100" id="aHS-Qs-1nQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xK2-WI-2MP" secondAttribute="bottom" constant="50" id="aHS-Qs-1nQ"/>
                             <constraint firstItem="Vxs-bJ-7cu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aW2-94-5a7"/>
-                            <constraint firstItem="ZfM-KW-qJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="bVS-VA-ZZL"/>
                             <constraint firstAttribute="bottom" secondItem="Vxs-bJ-7cu" secondAttribute="bottom" id="cSV-z3-rEU"/>
                             <constraint firstItem="1nb-i0-CWv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j56-7g-80K"/>
                             <constraint firstItem="1nb-i0-CWv" firstAttribute="leading" secondItem="MPt-To-XMV" secondAttribute="trailing" constant="93" id="lD8-0e-6vE"/>
-                            <constraint firstAttribute="trailing" secondItem="7CU-to-fLA" secondAttribute="trailing" constant="60" id="nse-Rd-Ptd"/>
                             <constraint firstItem="MPt-To-XMV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="oRJ-E6-PRt"/>
                             <constraint firstItem="1nb-i0-CWv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tFn-PP-vfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3j1-nj-5UC" secondAttribute="trailing" constant="72" id="uXj-Kk-7za"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="angerLabel" destination="h5Z-Dl-OYD" id="ExG-t9-K94"/>
-                        <outlet property="blueLabel" destination="aOT-cg-g53" id="ajH-p0-w9T"/>
-                        <outlet property="boreLabel" destination="4cC-sp-pcP" id="VHZ-Lo-QPk"/>
-                        <outlet property="happyLabel" destination="OYB-ZT-slg" id="5K7-rT-pDy"/>
-                        <outlet property="likeLabel" destination="8Zf-WP-8de" id="KAN-Sv-fPs"/>
-                        <outlet property="loveLabel" destination="60l-Uh-5qM" id="iVE-rB-1gr"/>
-                        <outlet property="panicLabel" destination="d9V-or-KUV" id="WE1-O6-sbP"/>
+                        <outlet property="angerLabel" destination="NcB-3q-0Vs" id="cFu-Ec-yWJ"/>
+                        <outlet property="blueLabel" destination="qgp-9G-0v4" id="6ab-8f-cgj"/>
+                        <outlet property="boreLabel" destination="dLS-vr-rNJ" id="Wtx-Hp-vEb"/>
+                        <outlet property="happyLabel" destination="Fjn-Kp-m0v" id="Tcq-XY-aWP"/>
+                        <outlet property="likeLabel" destination="qgy-1N-vd8" id="wrk-bH-71Z"/>
+                        <outlet property="loveLabel" destination="t6P-ZK-eBF" id="SjW-M7-EsN"/>
+                        <outlet property="panicLabel" destination="8qE-Dq-dtG" id="6Iv-Xg-wc4"/>
                         <outlet property="resetButton" destination="xK2-WI-2MP" id="h2Q-HD-nZj"/>
-                        <outlet property="sadLabel" destination="5AN-UK-RKc" id="ecE-V4-znU"/>
-                        <outlet property="shockedLabel" destination="rZe-uF-E0m" id="MVg-ZB-2lq"/>
+                        <outlet property="sadLabel" destination="keO-ZR-kcr" id="QOX-lj-BWa"/>
+                        <outlet property="shockedLabel" destination="mO1-ja-ebC" id="Ptk-xM-fyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -323,7 +350,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MainBackgroundImage" width="657.5" height="960"/>
+        <image name="MainBackgroundImage" width="426.5" height="640"/>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="mono_slime1" width="278" height="258"/>
         <image name="mono_slime2" width="278" height="258"/>

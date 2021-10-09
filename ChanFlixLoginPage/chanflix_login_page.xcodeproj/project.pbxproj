@@ -292,6 +292,7 @@
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chanflix_login_page/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHANFLIX;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +321,7 @@
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chanflix_login_page/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CHANFLIX;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

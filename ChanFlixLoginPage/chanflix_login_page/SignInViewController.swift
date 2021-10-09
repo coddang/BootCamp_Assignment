@@ -42,10 +42,6 @@ class SignInViewController: UIViewController {
         signInButton.setTitle("회원가입", for: .normal)
         signInButton.backgroundColor = UIColor.white
     }
-
-    @IBAction func tappedBG(_ sender: UITapGestureRecognizer) {
-        view.endEditing(true)
-    }
     
     func updateTextFieldPlaceholder(in textField: UITextField, placeholder: String) {
         textField.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
@@ -57,6 +53,10 @@ class SignInViewController: UIViewController {
         alertController.addAction(cancel)
         present(alertController, animated: true, completion: nil)
     }
+
+    @IBAction func tappedBG(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
     @IBAction func passwordEditingChanged(_ sender: UITextField) {
         if passwordTextField.text?.count ?? 0 > 6 {
@@ -64,7 +64,6 @@ class SignInViewController: UIViewController {
         }
     }
 
-    
     @IBAction func tappedSignInButton(_ sender: UIButton) {
         if emailOrPhoneNumberTextField.text!.contains("@") && emailOrPhoneNumberTextField.text!.contains(".") &&
             !emailOrPhoneNumberTextField.text!.contains(" ") &&
@@ -76,20 +75,17 @@ class SignInViewController: UIViewController {
             print("LOCATION: \(String(describing: locationTextField.text))")
             print("CODE: \(String(describing: recommendationCodeTextField.text))")
         } else {
-            alertMessage(message: "올바른 이메일과 비밀번호를 입력하세요.", buttonMsg: "다시 입력하기")
+            alertMessage(message: "올바른 이메일 혹은 비밀번호를 입력하세요.", buttonMsg: "다시 입력하기")
         }
     }
     
     @IBAction func changeStackViewClicked(_ sender: UISwitch) {
-        if !changeStackViewSwitch.isOn {
-            nicknameTextField.isHidden = true
-            locationTextField.isHidden = true
-            recommendationCodeTextField.isHidden = true
-        } else {
-            nicknameTextField.isHidden = false
-            locationTextField.isHidden = false
-            recommendationCodeTextField.isHidden = false
+        let hiddenAnimator = UIViewPropertyAnimator(duration: 0.3, curve: .easeInOut) { [weak self] in
+            self?.nicknameTextField.isHidden.toggle()
+            self?.locationTextField.isHidden.toggle()
+            self?.recommendationCodeTextField.isHidden.toggle()
         }
+        hiddenAnimator.startAnimation()
     }
 }
 

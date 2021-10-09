@@ -35,55 +35,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqq-AE-pky">
-                                <rect key="frame" x="75" y="72.666666666666671" width="300" height="31"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-OV-6oN">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="TV프로그램">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP7-UR-Tjs">
-                                        <rect key="frame" x="100" y="0.0" width="80" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="rX1-0J-KMq"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="영화">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-n8-ijZ">
-                                        <rect key="frame" x="180" y="0.0" width="120" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="xXV-M1-Frp"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="내가 찜한 콘텐츠">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="JP7-UR-Tjs" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="Cvf-8g-YHP"/>
-                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="Eca-zy-Scv"/>
-                                    <constraint firstAttribute="bottom" secondItem="JdN-OV-6oN" secondAttribute="bottom" id="L56-G9-GtH"/>
-                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="PRj-Kb-Kq1"/>
-                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="leading" secondItem="bqq-AE-pky" secondAttribute="leading" id="TVb-YH-HLv"/>
-                                    <constraint firstItem="JP7-UR-Tjs" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="WwX-Jf-z7J"/>
-                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="bFn-8C-Uin"/>
-                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="c80-mm-rYB"/>
-                                    <constraint firstAttribute="bottom" secondItem="VWb-n8-ijZ" secondAttribute="bottom" id="dpB-io-oK6"/>
-                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="leading" secondItem="JP7-UR-Tjs" secondAttribute="trailing" id="hfB-kM-Pcn"/>
-                                    <constraint firstAttribute="trailing" secondItem="VWb-n8-ijZ" secondAttribute="trailing" id="qHw-Hz-PHO"/>
-                                    <constraint firstAttribute="bottom" secondItem="JP7-UR-Tjs" secondAttribute="bottom" id="yHI-v8-XL3"/>
-                                </constraints>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-ll-8Ne">
                                 <rect key="frame" x="41" y="588" width="79" height="41.333333333333371"/>
                                 <subviews>
@@ -185,6 +136,56 @@
                                     <action selector="playButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EiP-Wv-A9d"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqq-AE-pky">
+                                <rect key="frame" x="94" y="73" width="280" height="28.333333333333329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdN-OV-6oN">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.333333333333329" height="28.333333333333332"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="TV프로그램">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP7-UR-Tjs">
+                                        <rect key="frame" x="93.333333333333343" y="0.0" width="66.666666666666657" height="28.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="rX1-0J-KMq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="영화">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-n8-ijZ">
+                                        <rect key="frame" x="160" y="0.0" width="120" height="28.333333333333332"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="xXV-M1-Frp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="내가 찜한 콘텐츠">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JP7-UR-Tjs" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="Cvf-8g-YHP"/>
+                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="Eca-zy-Scv"/>
+                                    <constraint firstAttribute="bottom" secondItem="JdN-OV-6oN" secondAttribute="bottom" id="L56-G9-GtH"/>
+                                    <constraint firstAttribute="width" constant="280" id="M4f-K4-iz0"/>
+                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="PRj-Kb-Kq1"/>
+                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="leading" secondItem="bqq-AE-pky" secondAttribute="leading" id="TVb-YH-HLv"/>
+                                    <constraint firstItem="JP7-UR-Tjs" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="WwX-Jf-z7J"/>
+                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="top" id="bFn-8C-Uin"/>
+                                    <constraint firstItem="JdN-OV-6oN" firstAttribute="centerY" secondItem="bqq-AE-pky" secondAttribute="centerY" id="c80-mm-rYB"/>
+                                    <constraint firstAttribute="bottom" secondItem="VWb-n8-ijZ" secondAttribute="bottom" id="dpB-io-oK6"/>
+                                    <constraint firstItem="VWb-n8-ijZ" firstAttribute="leading" secondItem="JP7-UR-Tjs" secondAttribute="trailing" id="hfB-kM-Pcn"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWb-n8-ijZ" secondAttribute="trailing" id="qHw-Hz-PHO"/>
+                                    <constraint firstAttribute="bottom" secondItem="JP7-UR-Tjs" secondAttribute="bottom" id="yHI-v8-XL3"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -194,9 +195,7 @@
                             <constraint firstItem="SOj-Bb-wNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Ob-rp-Fvo"/>
                             <constraint firstItem="zYI-w7-5P0" firstAttribute="leading" secondItem="iBZ-nX-wCv" secondAttribute="trailing" constant="44" id="5tn-CG-AkE"/>
                             <constraint firstAttribute="bottom" secondItem="Rs7-yM-e84" secondAttribute="bottom" id="6nI-T6-Kvo"/>
-                            <constraint firstItem="bqq-AE-pky" firstAttribute="leading" secondItem="lGN-mR-7iU" secondAttribute="trailing" constant="8" id="CAd-bP-JLb"/>
                             <constraint firstItem="TdF-eV-AmP" firstAttribute="top" secondItem="Rs7-yM-e84" secondAttribute="bottom" constant="-262" id="Cba-E9-9Hg"/>
-                            <constraint firstItem="Rs7-yM-e84" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="bottom" constant="-103.5" id="Euh-Gg-9ae"/>
                             <constraint firstItem="Rs7-yM-e84" firstAttribute="leading" secondItem="zv8-ll-8Ne" secondAttribute="trailing" constant="-120" id="GyM-uo-AJd"/>
                             <constraint firstItem="Bpt-7n-h67" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KNF-Hv-zT1"/>
                             <constraint firstItem="Rs7-yM-e84" firstAttribute="leading" secondItem="1ce-Oa-DXY" secondAttribute="trailing" constant="-76" id="PDg-VX-gpp"/>
@@ -204,14 +203,17 @@
                             <constraint firstItem="lGN-mR-7iU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Scb-m1-mZ8"/>
                             <constraint firstAttribute="bottom" secondItem="Bpt-7n-h67" secondAttribute="bottom" id="XLV-OX-g82"/>
                             <constraint firstItem="Rs7-yM-e84" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YLm-A4-Hf4"/>
+                            <constraint firstItem="Rs7-yM-e84" firstAttribute="top" secondItem="bqq-AE-pky" secondAttribute="bottom" constant="-101.33333333333333" id="YYF-SU-7eP"/>
                             <constraint firstItem="Bpt-7n-h67" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="anp-AW-XfI"/>
                             <constraint firstItem="TdF-eV-AmP" firstAttribute="leading" secondItem="Rs7-yM-e84" secondAttribute="trailing" constant="-101" id="eCU-v4-Cvw"/>
                             <constraint firstItem="Bpt-7n-h67" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kSK-qW-9R2"/>
                             <constraint firstItem="1ce-Oa-DXY" firstAttribute="top" secondItem="zv8-ll-8Ne" secondAttribute="bottom" constant="34.5" id="lnz-xl-NVg"/>
                             <constraint firstItem="Rs7-yM-e84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qst-gT-rKl"/>
+                            <constraint firstItem="bqq-AE-pky" firstAttribute="leading" secondItem="lGN-mR-7iU" secondAttribute="trailing" constant="27" id="t8S-xy-OkW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SOj-Bb-wNK" secondAttribute="trailing" constant="20" id="tco-uc-YlQ"/>
                             <constraint firstItem="lGN-mR-7iU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="txE-Rf-1PL"/>
                             <constraint firstItem="zv8-ll-8Ne" firstAttribute="top" secondItem="Rs7-yM-e84" secondAttribute="bottom" constant="-256" id="vKv-Pb-mRR"/>
+                            <constraint firstItem="JdN-OV-6oN" firstAttribute="top" secondItem="lGN-mR-7iU" secondAttribute="bottom" constant="-44" id="vyO-ou-hQu"/>
                             <constraint firstAttribute="bottom" secondItem="SOj-Bb-wNK" secondAttribute="bottom" constant="30" id="wXc-DJ-Yuy"/>
                             <constraint firstItem="iBZ-nX-wCv" firstAttribute="leading" secondItem="zv8-ll-8Ne" secondAttribute="trailing" constant="28" id="yiJ-2z-b4B"/>
                         </constraints>

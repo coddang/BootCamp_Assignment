@@ -61,11 +61,11 @@
 				24C26B42270DBC8F00889411 /* AppDelegate.swift */,
 				24C26B44270DBC8F00889411 /* SceneDelegate.swift */,
 				24C26B46270DBC8F00889411 /* MainDiaryViewController.swift */,
+				24B6E6C5270E941A002EE188 /* DDayViewController.swift */,
 				24C26B48270DBC8F00889411 /* Main.storyboard */,
 				24C26B4B270DBC9000889411 /* Assets.xcassets */,
 				24C26B4D270DBC9000889411 /* LaunchScreen.storyboard */,
 				24C26B50270DBC9000889411 /* Info.plist */,
-				24B6E6C5270E941A002EE188 /* DDayViewController.swift */,
 			);
 			path = emotion_diary_app;
 			sourceTree = "<group>";
@@ -296,6 +296,7 @@
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = emotion_diary_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EmotionDiary;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,6 +326,7 @@
 				DEVELOPMENT_TEAM = 9V32754VBF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = emotion_diary_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EmotionDiary;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
