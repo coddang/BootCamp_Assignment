@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OXJ-da-RTc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2p1-n8-S2a">
+            <objects>
+                <navigationController id="OXJ-da-RTc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xa4-mm-n1Y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="94h-ms-aFb" kind="relationship" relationship="rootViewController" id="bMV-2z-b7n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bYO-B2-SfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="69"/>
+        </scene>
+        <!--물 마시기-->
+        <scene sceneID="Cyw-ua-hNr">
+            <objects>
+                <viewController id="94h-ms-aFb" customClass="DrinkWaterViewController" customModule="DrinkWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="79O-6G-tng">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PIX-QW-0aA">
+                                <rect key="frame" x="87" y="308" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="33w-A8-n9Y"/>
+                                    <constraint firstAttribute="width" secondItem="PIX-QW-0aA" secondAttribute="height" multiplier="1:1" id="CAu-z8-Pof"/>
+                                    <constraint firstAttribute="height" constant="240" id="j9T-dr-9hm"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPQ-Vw-mpp">
+                                <rect key="frame" x="167" y="568" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kPQ-Vw-mpp" secondAttribute="height" multiplier="2:1" id="gvn-cp-qs0"/>
+                                    <constraint firstAttribute="height" constant="40" id="lAT-ZD-7uY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="waterTextFieldEditChanged:" destination="94h-ms-aFb" eventType="editingChanged" id="W1q-yx-cu0"/>
+                                    <action selector="waterTextFieldEditDidBegin:" destination="94h-ms-aFb" eventType="editingDidBegin" id="b3s-gO-Mgl"/>
+                                    <action selector="waterTextFieldEditDidEnd:" destination="94h-ms-aFb" eventType="editingDidEnd" id="pI8-Nm-mhX"/>
+                                </connections>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G5b-7u-IUu">
+                                <rect key="frame" x="0.0" y="832" width="414" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chS-PE-pWz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Bvg-mo-lMJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="Dx6-Wl-xch"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="물 마시기"/>
+                                        <connections>
+                                            <action selector="drinkWaterButtonClicked:" destination="94h-ms-aFb" eventType="touchUpInside" id="9hV-dC-fsY"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMj-tD-ZBy">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="14"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kMj-tD-ZBy" secondAttribute="height" multiplier="30:1" id="JUh-Xg-lOV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kMj-tD-ZBy" secondAttribute="bottom" id="7DW-wi-Tl0"/>
+                                    <constraint firstItem="kMj-tD-ZBy" firstAttribute="leading" secondItem="G5b-7u-IUu" secondAttribute="leading" id="dHp-TH-B23"/>
+                                    <constraint firstItem="kMj-tD-ZBy" firstAttribute="leading" secondItem="G5b-7u-IUu" secondAttribute="leading" id="vxo-Fz-gRG"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필 작성시 더욱 정확한 물 권장 섭취량을 알려드립니다" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3x3-Vj-92u">
+                                <rect key="frame" x="70.5" y="804" width="273" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tjo-Ze-STt">
+                                <rect key="frame" x="20" y="91" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Iro-AC-zHS">
+                                <rect key="frame" x="38" y="140" width="338" height="97"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잘하셨어요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-Gf-Ive">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 마신 양은" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U6-7h-ulx">
+                                        <rect key="frame" x="0.0" y="25" width="338" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1200ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy2-tP-7UO">
+                                        <rect key="frame" x="0.0" y="50" width="338" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="목표의 57%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFP-eK-Vmv">
+                                        <rect key="frame" x="0.0" y="82.5" width="338" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H7E-C6-15y"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="chS-PE-pWz" firstAttribute="top" secondItem="3x3-Vj-92u" secondAttribute="bottom" constant="13.5" id="4Yg-XE-eeu"/>
+                            <constraint firstItem="H7E-C6-15y" firstAttribute="trailing" secondItem="Tjo-Ze-STt" secondAttribute="trailing" constant="20" id="A7g-Hl-Buv"/>
+                            <constraint firstItem="Tjo-Ze-STt" firstAttribute="leading" secondItem="H7E-C6-15y" secondAttribute="leading" constant="20" id="EYB-55-HxV"/>
+                            <constraint firstItem="3x3-Vj-92u" firstAttribute="centerX" secondItem="G5b-7u-IUu" secondAttribute="centerX" id="GCP-8N-bb5"/>
+                            <constraint firstItem="PIX-QW-0aA" firstAttribute="centerY" secondItem="79O-6G-tng" secondAttribute="centerY" constant="-20" id="IQt-if-i8d"/>
+                            <constraint firstItem="Tjo-Ze-STt" firstAttribute="top" secondItem="H7E-C6-15y" secondAttribute="top" constant="3" id="LTj-tE-LY5"/>
+                            <constraint firstItem="Iro-AC-zHS" firstAttribute="leading" secondItem="H7E-C6-15y" secondAttribute="leading" constant="38" id="N9p-gq-XoA"/>
+                            <constraint firstItem="G5b-7u-IUu" firstAttribute="leading" secondItem="H7E-C6-15y" secondAttribute="leading" id="PVu-Fj-7IR"/>
+                            <constraint firstItem="3x3-Vj-92u" firstAttribute="centerX" secondItem="79O-6G-tng" secondAttribute="centerX" id="VtJ-p3-q6k"/>
+                            <constraint firstItem="Iro-AC-zHS" firstAttribute="top" secondItem="H7E-C6-15y" secondAttribute="top" constant="52" id="ZcB-0B-51F"/>
+                            <constraint firstItem="H7E-C6-15y" firstAttribute="trailing" secondItem="Iro-AC-zHS" secondAttribute="trailing" constant="38" id="b87-6c-YrI"/>
+                            <constraint firstItem="kPQ-Vw-mpp" firstAttribute="top" secondItem="PIX-QW-0aA" secondAttribute="bottom" constant="20" id="eWD-Ip-0I5"/>
+                            <constraint firstAttribute="bottom" secondItem="G5b-7u-IUu" secondAttribute="bottom" id="fnf-aE-1YM"/>
+                            <constraint firstItem="PIX-QW-0aA" firstAttribute="centerX" secondItem="79O-6G-tng" secondAttribute="centerX" id="hXi-e6-4MG"/>
+                            <constraint firstItem="kPQ-Vw-mpp" firstAttribute="centerX" secondItem="79O-6G-tng" secondAttribute="centerX" id="nuY-oR-dhy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="물 마시기" id="Pfe-Tz-oDz">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="V9P-sq-dsB">
+                            <connections>
+                                <action selector="refreshButtonClicked:" destination="94h-ms-aFb" id="6RQ-la-WY9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="person.circle" catalog="system" style="plain" id="YBC-0s-gIn">
+                            <connections>
+                                <segue destination="KK0-S2-Gxv" kind="show" id="GIF-6Y-4jP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="background" destination="79O-6G-tng" id="NQN-9F-Ppk"/>
+                        <outlet property="cactusImageView" destination="PIX-QW-0aA" id="pAn-uU-JKJ"/>
+                        <outlet property="drinkWaterButton" destination="chS-PE-pWz" id="g2N-24-a1j"/>
+                        <outlet property="drinkWaterButtonBottomView" destination="kMj-tD-ZBy" id="9If-8Q-VKq"/>
+                        <outlet property="firstNoticeMessage" destination="Tjo-Ze-STt" id="03P-aW-t9I"/>
+                        <outlet property="mainNavigationItem" destination="Pfe-Tz-oDz" id="viJ-gx-Bdj"/>
+                        <outlet property="profileBarButtonItem" destination="YBC-0s-gIn" id="5ES-xl-8sJ"/>
+                        <outlet property="recommendWaterLabel" destination="3x3-Vj-92u" id="DY6-mh-O0B"/>
+                        <outlet property="resetBarButtonItem" destination="V9P-sq-dsB" id="pyB-Vu-rXy"/>
+                        <outlet property="totalWaterLabelStackView" destination="Iro-AC-zHS" id="c2B-UD-Ryr"/>
+                        <outlet property="totalWaterML" destination="hy2-tP-7UO" id="RFQ-0i-BFd"/>
+                        <outlet property="totalWaterNotice1" destination="mCH-Gf-Ive" id="ZMG-dT-aDF"/>
+                        <outlet property="totalWaterNotice2" destination="7U6-7h-ulx" id="vsM-5w-p5M"/>
+                        <outlet property="totalWaterPercentage" destination="mFP-eK-Vmv" id="bJj-se-ZJv"/>
+                        <outlet property="waterTextField" destination="kPQ-Vw-mpp" id="DsA-ib-SgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5K-zh-4Kb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49.275362318840585" y="68.973214285714278"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="YzA-qS-PKk">
+            <objects>
+                <viewController id="KK0-S2-Gxv" customClass="ProfileViewController" customModule="DrinkWater" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7pj-qA-a58">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TSi-Fm-ng5">
+                                <rect key="frame" x="152" y="140" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="HIs-dX-LHy"/>
+                                    <constraint firstAttribute="width" secondItem="TSi-Fm-ng5" secondAttribute="height" multiplier="1:1" id="KWF-lo-wQB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QF1-Im-Ykt">
+                                <rect key="frame" x="45" y="326" width="324" height="160"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임을 설정해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8T2-8t-29f" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="0.0" width="324" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="jRU-A3-BrH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nickNameEditChanged:" destination="KK0-S2-Gxv" eventType="editingChanged" id="vMw-Qy-vtl"/>
+                                            <action selector="nickNameTextFieldEditDidBegin:" destination="KK0-S2-Gxv" eventType="editingDidBegin" id="aXL-Nt-uyk"/>
+                                            <action selector="nickNameTextFieldEditDidEnd:" destination="KK0-S2-Gxv" eventType="editingDidEnd" id="Frf-fo-PkU"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="키(cm)를 설정해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7Y-9k-8tJ" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="60" width="324" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="HcP-8E-M0A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="heightEditChanged:" destination="KK0-S2-Gxv" eventType="editingChanged" id="M50-P0-5Gw"/>
+                                            <action selector="heightTextFieldEditDidBegin:" destination="KK0-S2-Gxv" eventType="editingDidBegin" id="YX1-r7-0EH"/>
+                                            <action selector="heightTextFieldEditDidEnd:" destination="KK0-S2-Gxv" eventType="editingDidEnd" id="xT5-Fs-lBo"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="몸무게(kg)를 설정해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d0l-7J-sM1" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                        <rect key="frame" x="0.0" y="120" width="324" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gFd-LV-l46"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="weightEditChanged:" destination="KK0-S2-Gxv" eventType="editingChanged" id="O7f-Nw-5j6"/>
+                                            <action selector="weightTextFieldEditDidBegin:" destination="KK0-S2-Gxv" eventType="editingDidBegin" id="4go-qu-ho5"/>
+                                            <action selector="weightTextFieldEditDidEnd:" destination="KK0-S2-Gxv" eventType="editingDidEnd" id="dpH-aD-CVl"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pGB-wv-6JN"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pGB-wv-6JN" firstAttribute="trailing" secondItem="TSi-Fm-ng5" secondAttribute="trailing" constant="152" id="O9K-W9-dXG"/>
+                            <constraint firstItem="pGB-wv-6JN" firstAttribute="trailing" secondItem="QF1-Im-Ykt" secondAttribute="trailing" constant="45" id="keu-Fr-Bb1"/>
+                            <constraint firstItem="QF1-Im-Ykt" firstAttribute="leading" secondItem="pGB-wv-6JN" secondAttribute="leading" constant="45" id="nVx-ud-WER"/>
+                            <constraint firstItem="QF1-Im-Ykt" firstAttribute="top" secondItem="TSi-Fm-ng5" secondAttribute="bottom" constant="76" id="ti2-tY-Iiy"/>
+                            <constraint firstItem="TSi-Fm-ng5" firstAttribute="top" secondItem="pGB-wv-6JN" secondAttribute="top" constant="52" id="wdy-0R-wbe"/>
+                            <constraint firstItem="TSi-Fm-ng5" firstAttribute="leading" secondItem="pGB-wv-6JN" secondAttribute="leading" constant="152" id="xPg-aD-m3R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U2M-mZ-zVq">
+                        <barButtonItem key="rightBarButtonItem" title="저장" style="done" id="8Q4-fM-lIH">
+                            <connections>
+                                <action selector="saveButtonClicked:" destination="KK0-S2-Gxv" id="DCs-8K-cFG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heightTextField" destination="r7Y-9k-8tJ" id="xVP-il-4ed"/>
+                        <outlet property="nickNameTextField" destination="8T2-8t-29f" id="rlQ-s6-F1g"/>
+                        <outlet property="profileBackground" destination="7pj-qA-a58" id="lQ0-xY-jgD"/>
+                        <outlet property="profileImage" destination="TSi-Fm-ng5" id="Rdu-5o-gpu"/>
+                        <outlet property="profileNaviationItem" destination="U2M-mZ-zVq" id="eeN-B2-hWO"/>
+                        <outlet property="profileSaveButtonItem" destination="8Q4-fM-lIH" id="vt6-AL-urh"/>
+                        <outlet property="userTextFieldStackView" destination="QF1-Im-Ykt" id="hU2-EG-as6"/>
+                        <outlet property="weightTextField" destination="d0l-7J-sM1" id="Zm8-j2-bB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mOd-qr-1c9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="774" y="69"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="8T2-8t-29f">
+            <size key="intrinsicContentSize" width="125" height="18.5"/>
+        </designable>
+        <designable name="d0l-7J-sM1">
+            <size key="intrinsicContentSize" width="151" height="18.5"/>
+        </designable>
+        <designable name="r7Y-9k-8tJ">
+            <size key="intrinsicContentSize" width="131" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
