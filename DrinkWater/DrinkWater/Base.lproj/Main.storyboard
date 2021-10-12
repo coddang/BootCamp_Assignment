@@ -148,12 +148,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="물 마시기" id="Pfe-Tz-oDz">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="refresh" id="V9P-sq-dsB">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="refresh" id="V9P-sq-dsB">
                             <connections>
                                 <action selector="refreshButtonClicked:" destination="94h-ms-aFb" id="6RQ-la-WY9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="person.circle" catalog="system" style="plain" id="YBC-0s-gIn">
+                        <barButtonItem key="rightBarButtonItem" image="person.circle" catalog="system" style="done" id="YBC-0s-gIn">
                             <connections>
                                 <segue destination="KK0-S2-Gxv" kind="show" id="GIF-6Y-4jP"/>
                             </connections>

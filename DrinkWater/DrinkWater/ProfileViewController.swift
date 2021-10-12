@@ -14,6 +14,7 @@ enum TextInputError: Error {
     case emptyNickName
     case emptyWeight
     case emptyHeight
+    case invalidInput
 }
 
 class ProfileViewController: UIViewController {
@@ -46,8 +47,9 @@ class ProfileViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateUserTextFieldUI()
-        
     }
+
+
     
     // MARK: TextField Toggle Actions
     @IBAction func nickNameTextFieldEditDidBegin(_ sender: HoshiTextField) {
@@ -117,6 +119,8 @@ extension ProfileViewController {
             alert = UIAlertController(title: "알 림", message: "키를 입력해주세요", preferredStyle: .alert)
         case .emptyWeight:
             alert = UIAlertController(title: "알 림", message: "몸무게를 입력해주세요", preferredStyle: .alert)
+        case .invalidInput:
+            alert = UIAlertController(title: "알 림", message: "알맞은 키 혹은 몸무게를 입력해주세요", preferredStyle: .alert)
         }
         let cancel = UIAlertAction(title: "재입력", style: .destructive)
         alert.addAction(cancel)
@@ -201,18 +205,26 @@ extension ProfileViewController {
             popFailAlert(error: .emptyNickName)
             return
         }
-        guard let height = heightTextField.text, height != "" else {
-            popFailAlert(error: .emptyHeight)
-            return
-        }
         guard let weight = weightTextField.text, weight != "" else {
             popFailAlert(error: .emptyWeight)
             return
         }
-        UserDefaults.standard.set(nickNameTextField.text, forKey: "nickName")
-        UserDefaults.standard.set(heightTextField.text, forKey: "userHeight")
-        UserDefaults.standard.set(weightTextField.text, forKey: "userWeight")
+        guard let height = heightTextField.text, height != "" else {
+            popFailAlert(error: .emptyHeight)
+            return
+        }
+        guard let checkedWeight = Int(weight) else {
+            popFailAlert(error: .invalidInput)
+            return
+        }
+        guard let checkedHeight = Int(height) else {
+            popFailAlert(error: .invalidInput)
+            return
+        }
+        UserDefaults.standard.set(nickName, forKey: "nickName")
+        UserDefaults.standard.set(checkedWeight, forKey: "userWeight")
+        UserDefaults.standard.set(checkedHeight, forKey: "userHeight")
+        
         popSuccessAlert()
     }
-    
 }
