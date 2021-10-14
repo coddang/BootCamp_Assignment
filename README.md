@@ -113,7 +113,7 @@
   - Feat : 새로운 기능 추가
   - Delete : 기능 삭제
   - Update : 기능 수정
-  - Fix : 버그 수정 (subject에 이모지 추가 필수: 🚑)
+  - Fix : 버그 수정
   - Refactor: 리팩토링
   - Design : 사용자 UI 디자인 변경시
   - !BREAKING CHANGE : API 변경의 경우
@@ -125,34 +125,3 @@
   - Chore : 빌드 태스트 업데이트, 패키지 매니저를 설정하는 경우 (비즈니스 코드 변경 없을 시) 
 
 <br>
-
-## Commit Message Structure
-
-``` swift
-type: subject(50자 이내, 대문자 작성, 마침표 제거, 명령어 작성 특수문자 X)
-
-body(조금더 디테일한 부분 작성, 70자 이내, 본문과 공백 줄바꿈)
-
-footer(이슈에 대한 해결 예) Resolves: #321, See also: #234)
-```
-
-<br>
-
-## Footer 작성 Convention
-    - Fixes : 이슈 수정 중(아직 해결되지 않을 경우)
-    - Resolves : 이슈를 해결했을 때 사용( 예: #99)
-    - Ref : 참고할 이슈가 있을 때 사용 (예: #99)
-    - Related to : 아직 해결되지 않은 해당 커밋 관련 이슈 번호(예: #99)
-
-<br>
-
-## 작성 예제
-
-``` swift
-Feat: "추가 의류 검색 함수"
-
-의류 검색 최적화 알고리즘을 추가한 함수 작성
-
-Resolves: #45
-Related to: #99
-```
